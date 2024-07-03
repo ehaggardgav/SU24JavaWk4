@@ -1,12 +1,11 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
 
-// import org.junit.jupiter.api.Test;
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
   public static void main(String[] args) {
+  //array to hold student names
   ArrayList<String> roster = new ArrayList<>();
     roster.add("Amy");
     roster.add("Bill");
@@ -19,12 +18,23 @@ public class Main {
     roster.add("Imogene");
     roster.add("Kyle");
 
+  ArrayList<Integer> grades = new ArrayList<>();
+    grades.add(81);
+    grades.add(86);
+    grades.add(92);
+    grades.add(99);
+    grades.add(90);
+    grades.add(83);
+    grades.add(89);
+    grades.add(83);
+    grades.add(79);
+    grades.add(97);
+
+  
+  
   
     
   }
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
+  
 }

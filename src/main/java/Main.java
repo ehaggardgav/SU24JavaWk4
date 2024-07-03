@@ -8,7 +8,16 @@ import java.util.ArrayList;
 public class Main {
   public static void main(String[] args) {
   ArrayList<String> roster = new ArrayList<>();
-    
+    roster.add(Amy);
+    roster.add(Bill);
+    roster.add(Colin);
+    roster.add(Danny);
+    roster.add(Emma);
+    roster.add(Figus);
+    roster.add(George);
+    roster.add(Hannah);
+    roster.add(Imogene);
+    roster.add(Kyle);
     
   }
 

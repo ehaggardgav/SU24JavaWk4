@@ -30,9 +30,38 @@ public class Main {
     grades.add(79);
     grades.add(97);
 
+  Scanner scan = new Scanner(System.in);
   
-  
-  
+    while(true) {
+    System.out.print("Enter Student Name (or 'x' to exit): ");
+    String name = scan.nextLine();
+      if (name.equals("x")) {
+        break;
+      }
+
+      int index = -1;
+      for (int i = 0; i < roster.size(); i++) {
+          if (roster.get(i).equalsIgnoreCase(name)) { 
+              index = i;
+              break; 
+          }
+          }
+      
+      if (index != -1) {
+        System.out.println();
+        System.out.println("Your Student ID is: " + index);
+        System.out.println();
+        break;
+      }
+      
+    else {
+      System.out.println();
+      System.out.println("Student not found.  Please try again.");
+      System.out.println();
+    }
+  }
+    
+      
     
   }
 

@@ -104,7 +104,7 @@ public class Main {
         break;
       } else {
         System.out.println();  
-        System.out.println("Invalid Student ID.  Please try again.");
+        System.out.println("Invalid Student ID. Please try again.");
         System.out.println();
       }
       

@@ -10,7 +10,7 @@ public class Main {
     roster.add("Amy");
     roster.add("Bill");
     roster.add("Colin");
-    roster.add("Danny");
+    roster.add("Danni");
     roster.add("Emma");
     roster.add("Figus");
     roster.add("George");
@@ -31,7 +31,7 @@ public class Main {
     grades.add(97);
 
   Scanner scan = new Scanner(System.in);
-  
+  //while(true) loop to take student name as input (case-insensitive) and output student ID, or return error message and ask for output again
     while(true) {
     System.out.print("Enter Student Name (or 'x' to exit): ");
     String name = scan.nextLine();
@@ -60,7 +60,8 @@ public class Main {
       System.out.println();
     }
   }
-    
+
+  //while(true) loop to take student ID as input and output a letter grade based on predefined ranges  
     while(true) {
     System.out.print("Enter Student ID to see grade (or 'x' to exit): ");
     String studentID = scan.nextLine();
@@ -68,9 +69,10 @@ public class Main {
         break;
       }
 
-      int grade = grades.get(i);
-      for (int i=0; i<grades.size(); i++) {
-        String letter;
+      Integer studentNUM = Integer.valueOf(studentID); 
+      String letter = "";
+      if (studentNUM != null && studentNUM >= 0 && studentNUM < roster.size()) {
+        int grade = grades.get(studentNUM);
         if (grade >= 93) {
           letter = "A";
         } else if (grade >= 90) {
@@ -96,8 +98,15 @@ public class Main {
         } else if (grade < 60) {
           letter = "F";
         }
+      
+        System.out.println();
+        System.out.println("Your Grade: " + letter);
+        break;
+      } else {
+          System.out.println("Invalid Student ID.");
       }
-
+      
+    }
     
       
     

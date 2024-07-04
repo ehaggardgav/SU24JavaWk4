@@ -61,6 +61,44 @@ public class Main {
     }
   }
     
+    while(true) {
+    System.out.print("Enter Student ID to see grade (or 'x' to exit): ");
+    String studentID = scan.nextLine();
+      if (studentID.equals("x")) {
+        break;
+      }
+
+      int grade = grades.get(i);
+      for (int i=0; i<grades.size(); i++) {
+        String letter;
+        if (grade >= 93) {
+          letter = "A";
+        } else if (grade >= 90) {
+          letter = "A-";
+        } else if (grade >= 87) {
+          letter = "B+";
+        } else if (grade >= 83) {
+          letter = "B";
+        } else if (grade >= 80) {
+          letter = "B-";
+        } else if (grade >= 77) {
+          letter = "C+";
+        } else if (grade >= 73) {
+          letter = "C";
+        } else if (grade >= 70) {
+          letter = "C-";
+        } else if (grade >= 67) {
+          letter = "D+";
+        } else if (grade >= 63) {
+          letter = "D";
+        } else if (grade >= 60) {
+          letter = "D-";
+        } else if (grade < 60) {
+          letter = "F";
+        }
+      }
+
+    
       
     
   }

@@ -18,6 +18,7 @@ public class Main {
     roster.add("Imogene");
     roster.add("Kyle");
 
+  //array to hole student grades; must be same length as student roser
   ArrayList<Integer> grades = new ArrayList<>();
     grades.add(81);
     grades.add(86);

@@ -103,7 +103,9 @@ public class Main {
         System.out.println("Your Grade: " + letter);
         break;
       } else {
-          System.out.println("Invalid Student ID.");
+        System.out.println(;)  
+        System.out.println("Invalid Student ID.  Please try again.");
+        System.out.println();
       }
       
     }

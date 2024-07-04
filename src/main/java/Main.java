@@ -68,11 +68,11 @@ public class Main {
       if (studentID.equals("x")) {
         break;
       }
-
+//there should be some kind of exception handling language here, but that's a bit beyond me at the moment.  A good little future project!
       Integer studentNUM = Integer.valueOf(studentID); 
       String letter = "";
       if (studentNUM != null && studentNUM >= 0 && studentNUM < roster.size()) {
-        int grade = grades.get(studentNUM);
+        int grade = grades.get(studentNUM); //studentID comes from roster,  but can use derivative studentNUM here because the arrays are the same length
         if (grade >= 93) {
           letter = "A";
         } else if (grade >= 90) {
